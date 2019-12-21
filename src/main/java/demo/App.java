@@ -115,6 +115,7 @@ public final class App {
      * @param msg
      */
     private void doAllLogMessageAtLevel(Level level, String msg) {
+        System.out.println("Try to log "+msg);
         IntStream.range(0, this.loggers.size())
             .forEach(idx -> {
                 loggers.get(idx).log(level, msg);
@@ -132,6 +133,7 @@ public final class App {
     }
 
     private void doAllLogMessageToSeveralLevels(String msg, Level...levels) {
+        System.out.println("Try to log "+msg);
         System.out.println("~~~~~~~~~~~~~~~~ Log "+msg+" on levels "+Arrays.asList(levels).stream().map(Level::getName).collect(joining(" ")));
         for (Logger logger : loggers) {            
             makeLogMessageAtSeveralLevel(logger, msg, levels);
