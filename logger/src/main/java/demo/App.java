@@ -97,7 +97,7 @@ public final class App {
     }
 
     private void switchLoggerToLevel(Logger logger, Level level) {
-        System.out.println(String.format("------------------------------ Switch [%12s] to [%12s] %n",logger.getName(), level));
+        System.out.println(String.format("%n------------------------------ Switch [%12s] to [%12s] %n",logger.getName(), level));
         logger.setLevel(level);        
     }
 

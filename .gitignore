@@ -1,0 +1,5 @@
+.vscode/launch.json
+.vscode/settings.json
+logger/.editorconfig
+logger/.gitattributes
+logger/.travis.yml
