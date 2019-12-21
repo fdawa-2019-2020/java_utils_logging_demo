@@ -1,0 +1,14 @@
+= Demontration de la hiérarchie des niveaux de log
+
+Plusieurs loggeurs sont crées
+
+* org
+* org.foo
+* org.foo.bar
+
+Nous mettons des niveaux de log (Level) sur différents loggers et demandons l'affichage des message.
+
+Pour le lancer
+
+* cloner
+* Lancer `mvn exec:java`
